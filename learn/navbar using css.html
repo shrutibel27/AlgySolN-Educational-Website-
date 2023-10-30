@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="style.js.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- ===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+<script src="https://kit.fontawesome.com/5af7635e60.js" crossorigin="anonymous"></script>
+
+
+     <title>Responsive Navigation Menu Bar</title>
+</head>
+<body>
+    <!-- <div class="nav_quotes">
+        <div class="navbar"> -->
+            <!-- 1st drop down -->
+            <!-- <div class="dropdown">
+              <button class="dropbtn">Dropdown 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div> 
+            <a class="news_dropdown" href="#home">Home</a>
+            -->
+            <!-- 2nd drop down
+             -->
+             <!-- <div class="dropdown">
+                <button class="dropbtn">Dropdown 
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">SDE sheet 1</a>
+                  <a href="#">SDE sheet 2</a>
+                  <a href="#">SDE sheet 3</a>
+                </div>
+              </div> 
+              <a class="news_dropdown" href="#news">News</a> -->
+              <!-- 3rd drop down
+             -->
+             <!-- <div class="dropdown">
+                <button class="dropbtn">Dropdown 
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div> 
+              <a class="news_dropdown" href="#news">News</a> -->
+    <!-- </div> -->
+    <nav>
+        <div class="nav-bar">
+            <i class='bx bx-menu sidebarOpen' ></i>
+            <span class="logo navLogo"><img src="" alt=""><a href="#">AlgoRanger</a></span>
+
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo"><a href="#"><img src="ALgoRanger.png" alt="logo">AlgoRanger</a></span>
+                    <i class='bx bx-x siderbarClose'></i>
+                </div>
+
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Learn</a></li>
+                    <li><a href="#">My Profile</a></li>
+                    <li><a href="#">SDE</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="darkLight-searchBox">
+                <div class="dark-light">
+                    <i class='bx bx-moon moon'></i>
+                    <i class='bx bx-sun sun'></i>
+                </div>
+
+                <div class="searchBox">
+                   <div class="searchToggle">
+                    <i class='bx bx-x cancel'></i>
+                    <i class='bx bx-search search'></i>
+                   </div>
+
+                    <div class="search-field">
+                        <input type="text" placeholder="Search...">
+                        <i class='bx bx-search'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+<script>
+
+const body = document.querySelector("body"),
+      nav = document.querySelector("nav"),
+      modeToggle = document.querySelector(".dark-light"),
+      searchToggle = document.querySelector(".searchToggle"),
+      sidebarOpen = document.querySelector(".sidebarOpen"),
+      siderbarClose = document.querySelector(".siderbarClose");
+
+      let getMode = localStorage.getItem("mode");
+          if(getMode && getMode === "dark-mode"){
+            body.classList.add("dark");
+          }
+
+// js code to toggle dark and light mode
+      modeToggle.addEventListener("click" , () =>{
+        modeToggle.classList.toggle("active");
+        body.classList.toggle("dark");
+
+        // js code to keep user selected mode even page refresh or file reopen
+        if(!body.classList.contains("dark")){
+            localStorage.setItem("mode" , "light-mode");
+        }else{
+            localStorage.setItem("mode" , "dark-mode");
+        }
+      });
+
+// js code to toggle search box
+        searchToggle.addEventListener("click" , () =>{
+        searchToggle.classList.toggle("active");
+      });
+ 
+      
+//   js code to toggle sidebar
+sidebarOpen.addEventListener("click" , () =>{
+    nav.classList.add("active");
+});
+
+body.addEventListener("click" , e =>{
+    let clickedElm = e.target;
+
+    if(!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")){
+        nav.classList.remove("active");
+    }
+});
+
+</script>
+
+<div class="topic_div">DSA topics</div>
+<div class="quote_div">The Time is now..</div>
+<div class="Note_div">DSA topics overview: <br>Note: The Series doesn't focus on any specific programming language.
+Instead, it emphasizes logic and uses pseudocode. The first two basic videos might use C++, but for Java tutorials,
+you can watch other YouTube videos. When tackling core problems of data structures and algorithms (DSA), the Series uses
+pseudocode that isn’t tied to any particular programming language. However, you can find code examples in your preferred
+language in the notes and articles provided.</div>
+
+<div class="animated-progress progress-blue">
+    <span data-progress="45">2/500</span>
+  </div>
+
+
+
+</div>
+
+<button class="collapsible">Arrays</button>
+<div class="content"><li> <a href="#">Introduction to Arrays</a><br></li>
+     
+  <li>  <a href="#">MultiDimensional Arrays</a><br></li>
+        <li>  <a href="#">Traverssal in Arrays</a><br></li>
+   <li><a href="#">operations on Array</a><br></li>
+   <li><a href="#">Practise problems on Array</a><br></li>
+
+</div>
+
+
+<button class="collapsible">ArrayList</button>
+<div class="content">
+    
+       <li> <a href="#">Introduction to Arrays</a><br></li>
+     
+       <li>  <a href="#">MultiDimensional Arrays</a><br></li>
+             <li>  <a href="#">Traverssal in Arrays</a><br></li>
+        <li><a href="#">operations on Array</a><br></li>
+        <li><a href="#">Practise problems on Array</a><br></li>
+    
+</div>
+<button class="collapsible">Sorting algorithms</button>
+<div class="content">
+  <li> <a href="#">Introduction to Arrays</a><br></li>
+     
+       <li>  <a href="#">MultiDimensional Arrays</a><br></li>
+             <li>  <a href="#">Traverssal in Arrays</a><br></li>
+        <li><a href="#">operations on Array</a><br></li>
+        <li><a href="#">Practise problems on Array</a><br></li>
+    
+</div>
+<button class="collapsible">LinkedList</button>
+<div class="content"><li> <a href="#">Introduction to Arrays</a><br></li>
+     
+  <li>  <a href="#">MultiDimensional Arrays</a><br></li>
+        <li>  <a href="#">Traverssal in Arrays</a><br></li>
+   <li><a href="#">operations on Array</a><br></li>
+   <li><a href="#">Practise problems on Array</a><br></li>
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
+
+</div>
+
+
+
+</body>
+</html>
