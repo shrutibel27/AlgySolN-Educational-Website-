@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="learnpage_intro.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- ===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+<script src="https://kit.fontawesome.com/5af7635e60.js" crossorigin="anonymous"></script>
+<link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <script src="/scripts/jquery.min.js"></script>
+      <script src="/bootstrap/js/bootstrap.min.js"></script>
+      <!-- bootstrap for table -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+     <title>AlgoRanger</title>
+</head>
+<body>
+   
+ 
+    <nav>
+        <div class="nav-bar">
+            <i class='bx bx-menu sidebarOpen' ></i>
+            <span class="logo navLogo"><a href="#">AlgoRanger</a></span>
+
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo"><a href="#">AlgoRanger</a></span>
+                    <i class='bx bx-x siderbarClose'></i>
+                </div>
+
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Learn</a></li>
+                    <li><a href="#">My Profile</a></li>
+                    <li><a href="#">SDE</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="darkLight-searchBox">
+                <div class="dark-light">
+                    <i class='bx bx-moon moon'></i>
+                    <i class='bx bx-sun sun'></i>
+                </div>
+
+                <div class="searchBox">
+                   <div class="searchToggle">
+                    <i class='bx bx-x cancel'></i>
+                    <i class='bx bx-search search'></i>
+                   </div>
+
+                    <div class="search-field">
+                        <input type="text" placeholder="Search...">
+                        <i class='bx bx-search'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+<script>
+
+const body = document.querySelector("body"),
+      nav = document.querySelector("nav"),
+      modeToggle = document.querySelector(".dark-light"),
+      searchToggle = document.querySelector(".searchToggle"),
+      sidebarOpen = document.querySelector(".sidebarOpen"),
+      siderbarClose = document.querySelector(".siderbarClose");
+
+      let getMode = localStorage.getItem("mode");
+          if(getMode && getMode === "dark-mode"){
+            body.classList.add("dark");
+          }
+
+// js code to toggle dark and light mode
+      modeToggle.addEventListener("click" , () =>{
+        modeToggle.classList.toggle("active");
+        body.classList.toggle("dark");
+
+        // js code to keep user selected mode even page refresh or file reopen
+        if(!body.classList.contains("dark")){
+            localStorage.setItem("mode" , "light-mode");
+        }else{
+            localStorage.setItem("mode" , "dark-mode");
+        }
+      });
+
+// js code to toggle search box
+        searchToggle.addEventListener("click" , () =>{
+        searchToggle.classList.toggle("active");
+      });
+ 
+      
+//   js code to toggle sidebar
+sidebarOpen.addEventListener("click" , () =>{
+    nav.classList.add("active");
+});
+
+body.addEventListener("click" , e =>{
+    let clickedElm = e.target;
+
+    if(!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")){
+        nav.classList.remove("active");
+    }
+});
+
+</script>
+
+<div class="topic_div">Array</div>
+<div class="quote_div">Introduction to Array</div>
+<div class="Note_div">Array overview: <br>An array is a collection of items stored at contiguous memory locations. The idea is to store multiple items of the same type together. This makes it easier to calculate the position of each element by simply adding an offset to a base value, i.e., the memory location of the first element of the array (generally denoted by the name of the array)..</div>
+
+<div class="array_img"><img src="Array-data-structure img.png" alt="Nature" class="responsive"></div>
+<div class="img_explained">Array <br>The above image can be looked as a top-level view of a staircase where you are at the base of the staircase. Each element can be uniquely identified by their index in the array (in a similar way as you could identify your friends by the step on which they were on in the above example).</div>
+
+
+</div>
+
+
+<button class="collapsible">Practise Questions on Array</button>
+<div class="content">
+<!-- 
+
+
+
+ -->
+
+
+
+
+
+
+
+
+ 
+<table>
+  <thead>
+      <tr>
+          <th>Action</th>
+          <th>Problem [Articles, Codes]</th>
+          <th>PL-1</th>
+          <th>Solution</th>
+          <th>PL-2</th>
+          <th>Notes</th>
+          <th>Company</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td title>
+              <select id="lrgstlmntinnrry" class prev-value="0">
+                  <option value="0">Pending</option>
+                  <option value="1">Done</option>
+                  <option value="2">Revisit</option>
+              </select>
+          </td>
+          <td title>
+              <a target="_blank" rel="noopener" href="https://takeuforward.org/data-structure/find-the-largest-element-in-an-array/">Largest
+Element in an Array</a>
+          </td>
+          <td title="CodeStudio link">
+              <a target="_blank" rel="noopener" href="https://www.codingninjas.com/codestudio/problems/largest-element-in-the-array-largest-element-in-the-array_5026279?utm_source=striver&amp;utm_medium=website&amp;utm_campaign=a_zcoursetuf">
+                  <img class="lazy lazy-hidden aligncenter wp-image-1830 lazy-loaded" src="//takeuforward.org/wp-content/plugins/a3-lazy-load/assets/images/lazy_placeholder.gif" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png">
+                  <noscript>
+                      <img class="aligncenter wp-image-1830 lazy-loaded" src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png">
+                  </noscript>
+              </a>
+          </td>
+          <td title="YouTube Solution">
+              <button>
+                  <img class="lazy lazy-hidden" src="//takeuforward.org/wp-content/plugins/a3-lazy-load/assets/images/lazy_placeholder.gif" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2022/08/youtube-icon-42001-300x300.png.webp" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2022/08/youtube-icon-42001-300x300.png.webp">
+                  <noscript>
+                      <img src="https://takeuforward.org/wp-content/uploads/2022/08/youtube-icon-42001-300x300.png.webp" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2022/08/youtube-icon-42001-300x300.png.webp">
+                  </noscript>
+              </button>
+          </td>
+          <td title="Leetcode link"></td>
+          <td title="Add Note">
+              <button>
+                  <img class="lazy lazy-hidden" src="//takeuforward.org/wp-content/plugins/a3-lazy-load/assets/images/lazy_placeholder.gif" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/05/empty-note.png" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/05/empty-note.png">
+                  <noscript>
+                      <img src="https://takeuforward.org/wp-content/uploads/2023/05/empty-note.png" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/05/empty-note.png">
+                  </noscript>
+              </button>
+          </td>
+          <td title="Company Tags"></td>
+      </tr>
+      <tr>
+          <td title>
+              <select id="chckifthrryissrtd" class prev-value="0">
+                  <option value="0">Pending</option>
+                  <option value="1">Done</option>
+                  <option value="2">Revisit</option>
+              </select>
+          </td>
+          <td title>
+              <a target="_blank" rel="noopener" href="https://takeuforward.org/data-structure/check-if-an-array-is-sorted/">Check if the
+array is sorted</a>
+          </td>
+          <td title="CodeStudio link">
+              <a target="_blank" rel="noopener" href="https://www.codingninjas.com/codestudio/problems/ninja-and-the-sorted-check_6581957?utm_source=striver&amp;utm_medium=website&amp;utm_campaign=a_zcoursetuf">
+                  <img class="lazy lazy-hidden aligncenter wp-image-1830 lazy-loaded" src="//takeuforward.org/wp-content/plugins/a3-lazy-load/assets/images/lazy_placeholder.gif" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png">
+                  <noscript>
+                      <img class="aligncenter wp-image-1830 lazy-loaded" src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png">
+                  </noscript>
+              </a>
+          </td>
+          <td title="YouTube Solution">
+              <button>
+                  <img class="lazy lazy-hidden" src="//takeuforward.org/wp-content/plugins/a3-lazy-load/assets/images/lazy_placeholder.gif" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2022/08/youtube-icon-42001-300x300.png.webp" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2022/08/youtube-icon-42001-300x300.png.webp">
+                  <noscript>
+                      <img src="https://takeuforward.org/wp-content/uploads/2022/08/youtube-icon-42001-300x300.png.webp" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2022/08/youtube-icon-42001-300x300.png.webp">
+                  </noscript>
+              </button>
+          </td>
+          <td title="Leetcode link">
+              <a target="_blank" rel="noopener" href="https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/#:~:text=Input%3A%20nums%20%3D%20%5B2%2C,no%20rotation)%20to%20make%20nums.">
+                  <img class="lazy lazy-hidden aligncenter wp-image-1830 lazy-loaded" src="//takeuforward.org/wp-content/plugins/a3-lazy-load/assets/images/lazy_placeholder.gif" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2022/08/leetcode-1-150x150.png.webp" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2022/08/leetcode-1-150x150.png.webp">
+                  <noscript>
+                      <img class="aligncenter wp-image-1830 lazy-loaded" src="https://takeuforward.org/wp-content/uploads/2022/08/leetcode-1-150x150.png.webp" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2022/08/leetcode-1-150x150.png.webp">
+                  </noscript>
+              </a>
+          </td>
+          <td title="Add Note">
+              <button>
+                  <img class="lazy lazy-hidden" src="//takeuforward.org/wp-content/plugins/a3-lazy-load/assets/images/lazy_placeholder.gif" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/05/empty-note.png" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/05/empty-note.png">
+                  <noscript>
+                      <img src="https://takeuforward.org/wp-content/uploads/2023/05/empty-note.png" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/05/empty-note.png">
+                  </noscript>
+              </button>
+          </td>
+          <td title="Company Tags"></td>
+      </tr>
+      <tr>
+          <td title>
+              <select id="scndlrgstlmntinnrrywithtsrting" class prev-value="0">
+                  <option value="0">Pending</option>
+                  <option value="1">Done</option>
+                  <option value="2">Revisit</option>
+              </select>
+          </td>
+          <td title="Second Largest Element in an Array without sorting">
+              <a target="_blank" rel="noopener" href="https://takeuforward.org/data-structure/find-second-smallest-and-second-largest-element-in-an-array/">Second
+Largest Element in an Array without…</a>
+          </td>
+          <td title="CodeStudio link">
+              <a target="_blank" rel="noopener" href="https://www.codingninjas.com/codestudio/problems/ninja-and-the-second-order-elements_6581960?utm_source=striver&amp;utm_medium=website&amp;utm_campaign=a_zcoursetuf">
+                  <img class="lazy lazy-hidden aligncenter wp-image-1830 lazy-loaded" src="//takeuforward.org/wp-content/plugins/a3-lazy-load/assets/images/lazy_placeholder.gif" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png">
+                  <noscript>
+                      <img class="aligncenter wp-image-1830 lazy-loaded" src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png">
+                  </noscript>
+              </a>
+          </td>
+          <td title="YouTube Solution">
+              <button>
+                  <img class="lazy lazy-hidden" src="//takeuforward.org/wp-content/plugins/a3-lazy-load/assets/images/lazy_placeholder.gif" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2022/08/youtube-icon-42001-300x300.png.webp" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2022/08/youtube-icon-42001-300x300.png.webp">
+                  <noscript>
+                      <img src="https://takeuforward.org/wp-content/uploads/2022/08/youtube-icon-42001-300x300.png.webp" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2022/08/youtube-icon-42001-300x300.png.webp">
+                  </noscript>
+              </button>
+          </td>
+          <td title="Leetcode link"></td>
+          <td title="Add Note">
+              <button>
+                  <img class="lazy lazy-hidden" src="//takeuforward.org/wp-content/plugins/a3-lazy-load/assets/images/lazy_placeholder.gif" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/05/empty-note.png" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/05/empty-note.png">
+                  <noscript>
+                      <img src="https://takeuforward.org/wp-content/uploads/2023/05/empty-note.png" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/05/empty-note.png">
+                  </noscript>
+              </button>
+          </td>
+          <td title="Company Tags"></td>
+      </tr>
+      <tr>
+          <td title>
+              <select id="linrsrch" class prev-value="0">
+                  <option value="0">Pending</option>
+                  <option value="1">Done</option>
+                  <option value="2">Revisit</option>
+              </select>
+          </td>
+          <td title>
+              <a target="_blank" rel="noopener" href="https://takeuforward.org/data-structure/linear-search-in-c/">Linear Search</a>
+          </td>
+          <td title="CodeStudio link">
+              <a target="_blank" rel="noopener" href="https://www.codingninjas.com/codestudio/problems/linear-search_6922070?utm_source=striver&amp;utm_medium=website&amp;utm_campaign=a_zcoursetuf">
+                  <img class="lazy lazy-hidden aligncenter wp-image-1830 lazy-loaded" src="//takeuforward.org/wp-content/plugins/a3-lazy-load/assets/images/lazy_placeholder.gif" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png">
+                  <noscript>
+                      <img class="aligncenter wp-image-1830 lazy-loaded" src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png">
+                  </noscript>
+              </a>
+          </td>
+          <td title="YouTube Solution">
+              <button>
+                  <img class="lazy lazy-hidden" src="//takeuforward.org/wp-content/plugins/a3-lazy-load/assets/images/lazy_placeholder.gif" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2022/08/youtube-icon-42001-300x300.png.webp" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2022/08/youtube-icon-42001-300x300.png.webp">
+                  <noscript>
+                      <img src="https://takeuforward.org/wp-content/uploads/2022/08/youtube-icon-42001-300x300.png.webp" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2022/08/youtube-icon-42001-300x300.png.webp">
+                  </noscript>
+              </button>
+          </td>
+          <td title="Leetcode link"></td>
+          <td title="Add Note">
+              <button>
+                  <img class="lazy lazy-hidden" src="//takeuforward.org/wp-content/plugins/a3-lazy-load/assets/images/lazy_placeholder.gif" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/05/empty-note.png" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/05/empty-note.png">
+                  <noscript>
+                      <img src="https://takeuforward.org/wp-content/uploads/2023/05/empty-note.png" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/05/empty-note.png">
+                  </noscript>
+              </button>
+          </td>
+          <td title="Company Tags"></td>
+      </tr>
+      <tr>
+          <td title>
+              <select id="lftrttnrrybynplc" class prev-value="0">
+                  <option value="0">Pending</option>
+                  <option value="1">Done</option>
+                  <option value="2">Revisit</option>
+              </select>
+          </td>
+          <td title>
+              <a target="_blank" rel="noopener" href="https://takeuforward.org/data-structure/left-rotate-the-array-by-one/">Left Rotate an
+array by one place</a>
+          </td>
+          <td title="CodeStudio link">
+              <a target="_blank" rel="noopener" href="https://www.codingninjas.com/codestudio/problems/left-rotate-an-array-by-one_5026278?utm_source=striver&amp;utm_medium=website&amp;utm_campaign=a_zcoursetuf">
+                  <img class="lazy lazy-hidden aligncenter wp-image-1830 lazy-loaded" src="//takeuforward.org/wp-content/plugins/a3-lazy-load/assets/images/lazy_placeholder.gif" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png">
+                  <noscript>
+                      <img class="aligncenter wp-image-1830 lazy-loaded" src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png">
+                  </noscript>
+              </a>
+          </td>
+          <td title="YouTube Solution">
+              <button>
+                  <img class="lazy lazy-hidden" src="//takeuforward.org/wp-content/plugins/a3-lazy-load/assets/images/lazy_placeholder.gif" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2022/08/youtube-icon-42001-300x300.png.webp" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2022/08/youtube-icon-42001-300x300.png.webp">
+                  <noscript>
+                      <img src="https://takeuforward.org/wp-content/uploads/2022/08/youtube-icon-42001-300x300.png.webp" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2022/08/youtube-icon-42001-300x300.png.webp">
+                  </noscript>
+              </button>
+          </td>
+          <td title="Leetcode link">
+              <a target="_blank" rel="noopener" href="https://leetcode.com/problems/rotate-array/">
+                  <img class="lazy lazy-hidden aligncenter wp-image-1830 lazy-loaded" src="//takeuforward.org/wp-content/plugins/a3-lazy-load/assets/images/lazy_placeholder.gif" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2022/08/leetcode-1-150x150.png.webp" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2022/08/leetcode-1-150x150.png.webp">
+                  <noscript>
+                      <img class="aligncenter wp-image-1830 lazy-loaded" src="https://takeuforward.org/wp-content/uploads/2022/08/leetcode-1-150x150.png.webp" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2022/08/leetcode-1-150x150.png.webp">
+                  </noscript>
+              </a>
+          </td>
+          <td title="Add Note">
+              <button>
+                  <img class="lazy lazy-hidden" src="//takeuforward.org/wp-content/plugins/a3-lazy-load/assets/images/lazy_placeholder.gif" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/05/empty-note.png" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/05/empty-note.png">
+                  <noscript>
+                      <img src="https://takeuforward.org/wp-content/uploads/2023/05/empty-note.png" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/05/empty-note.png">
+                  </noscript>
+              </button>
+          </td>
+          <td title="Company Tags"></td>
+      </tr>
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+
+
+ -->
+
+
+</div>
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
+
+
+
+<!-- for tables -->
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+</body>
+</html>
