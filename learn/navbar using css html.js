@@ -1,3 +1,6 @@
+
+// js code for the progress bar
+
 $(".animated-progress span").each(function () {
     $(this).animate(
       {
