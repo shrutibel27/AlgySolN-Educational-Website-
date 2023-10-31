@@ -64,12 +64,12 @@ section {
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 1rem;
+    font-size: larger;
     font-weight: 400;
     line-height: 1.5;
-    color: #212529;
+    color: #ffffff;
     text-align: left;
-    background-color: #010000
+    background-color:#000000d9;
 }
 
 [tabindex="-1"]:focus {
@@ -167,7 +167,7 @@ sup {
 }
 
 a {
-    color: #007bff;
+    color: #ffffff;
     text-decoration: none;
     background-color: transparent
 }
@@ -2731,8 +2731,8 @@ fieldset:disabled a.btn {
 
 .btn-primary {
     color: #fff;
-    background-color: #007bff;
-    border-color: #007bff
+    background-color: #dd80f1c7;
+    border-color: #c3cdd7
 }
 
 .btn-primary:hover {
@@ -2959,8 +2959,8 @@ fieldset:disabled a.btn {
 
 .btn-light {
     color: #212529;
-    background-color: #f8f9fa;
-    border-color: #f8f9fa
+    background-color:#d48ad6;
+    border-color: #d48ad6;
 }
 
 .btn-light:hover {
@@ -3106,8 +3106,8 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-success {
-    color: #28a745;
-    border-color: #28a745
+    color: #ffffff;
+    border-color: #ffffff
 }
 
 .btn-outline-success:hover {
@@ -3446,7 +3446,7 @@ input[type=submit].btn-block {
     color: #212529;
     text-align: left;
     list-style: none;
-    background-color: #fff;
+    background-color: #b36fb2;
     background-clip: padding-box;
     border: 1px solid rgba(0, 0, 0, .15);
     border-radius: .25rem
@@ -3617,7 +3617,7 @@ input[type=submit].btn-block {
     padding: .25rem 1.5rem;
     clear: both;
     font-weight: 400;
-    color: #212529;
+    color: #ffffff;
     text-align: inherit;
     white-space: nowrap;
     background-color: transparent;
@@ -4570,7 +4570,7 @@ input[type=submit].btn-block {
     padding-top: .3125rem;
     padding-bottom: .3125rem;
     margin-right: 1rem;
-    font-size: 1.25rem;
+    font-size: x-large;
     line-height: inherit;
     white-space: nowrap
 }
@@ -4989,7 +4989,7 @@ input[type=submit].btn-block {
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
-    background-color: #fff;
+    background-color: #000000;
     background-clip: border-box;
     border: 1px solid rgba(0, 0, 0, .125);
     border-radius: .25rem
@@ -5249,8 +5249,8 @@ input[type=submit].btn-block {
     padding: .75rem 1rem;
     margin-bottom: 1rem;
     list-style: none;
-    background-color: #000000;
-    border-radius: .25rem
+    background-color: #00000000;
+    border-radius: .25rem;
 }
 
 .breadcrumb-item+.breadcrumb-item {
@@ -5273,7 +5273,7 @@ input[type=submit].btn-block {
 }
 
 .breadcrumb-item.active {
-    color: #6c757d
+    color: #ffffff
 }
 
 .pagination {
@@ -5813,7 +5813,7 @@ a.badge-dark:focus {
     display: block;
     padding: .75rem 1.25rem;
     margin-bottom: -1px;
-    background-color: #fff;
+    background-color: #0000;
     border: 1px solid rgba(0, 0, 0, .125)
 }
 
@@ -7110,7 +7110,7 @@ button.bg-light:hover {
 }
 
 .bg-dark {
-    background-color: #343a40 !important
+    background-color:rgb(0 123 255 / 37%) !important 
 }
 
 a.bg-dark:focus,
