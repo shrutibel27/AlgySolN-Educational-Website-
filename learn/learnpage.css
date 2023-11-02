@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 *{
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
@@ -437,7 +437,7 @@ border: 2px solid black;
   }
 .Note_div{
 margin-top: 15px;
-max-width:800px;
+max-width:1000px;
 height: 200px;
 margin-left: 100px;
 text-wrap: wrap;
@@ -450,7 +450,7 @@ background-color: #18191A;
   }
 
   .animated-progress {
-    width: 800px;
+    width: 1000px;
     height: 45px;
     border-radius: 5px;
     margin-left: 100px;
@@ -494,7 +494,7 @@ margin-top: 10px;
     text-align: left;
     outline: none;
     font-size: 15px;
-    width: 800px;
+    width: 1000px;
     height: 45px;
    padding-bottom: 10px;
    text-decoration: none;
@@ -511,9 +511,10 @@ text-decoration: none;
     transition: max-height 0.2s ease-out;
     background-color: #18191A;
     color: white;
-    width: 800px;
+    width: 1000px;
     height: 200px;
     margin-left: 100px;
+    margin-right: 100px;
   }
 
   .collapsible:after {

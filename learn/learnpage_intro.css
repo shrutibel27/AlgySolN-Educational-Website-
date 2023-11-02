@@ -47,7 +47,7 @@ body.dark{
 
 .array_img{
 
-width: 800px;
+width: 1000px;
 background-repeat: no-repeat;
 height: auto;
 object-fit: contain;
@@ -414,6 +414,7 @@ body.dark .search-field i{
     text-align: left;
     outline: none;
     font-size: 15px;
+    margin-bottom: 20px;
   }
   
   .active, .collapsible:hover {
@@ -438,11 +439,12 @@ color: white;
 font-size: 35px;
 padding-left: 100px;
 font-weight: 800;
+
   }
 
 .quote_div{
     margin-top: 2px;
-width: 100%;
+width: 1000px;
 height: 50px;
 background-color: #282525;
 color: white;
@@ -451,11 +453,13 @@ padding-left: 100px;
 padding-top: 10px;
 font-weight: 800;
 border: 2px solid black;
+margin-left: 100px;
+margin-right: 100px;
 
   }
 .Note_div{
 margin-top: 15px;
-max-width:800px;
+max-width:1000px;
 height: 200px;
 margin-left: 100px;
 text-wrap: wrap;
@@ -469,7 +473,7 @@ background-color: #18191A;
 
 .img_explained{
     margin-top: 15px;
-    max-width:800px;
+    max-width:1000px;
     height: 150px;
     margin-left: 100px;
     text-wrap: wrap;
@@ -482,7 +486,7 @@ background-color: #18191A;
       }
 
   .animated-progress {
-    width: 800px;
+    width: 1000px;
     height: 45px;
     border-radius: 5px;
     margin-left: 100px;
@@ -526,7 +530,7 @@ margin-top: 10px;
     text-align: left;
     outline: none;
     font-size: 15px;
-    width: 800px;
+    width: 1000px;
     height: 45px;
    padding-bottom: 15px;
    text-decoration: none;
@@ -543,7 +547,7 @@ text-decoration: none;
     transition: max-height 0.2s ease-out;
     background-color: #18191A;
     color: white;
-    width: 800px;
+    width: 1000px;
     
     margin-left: 100px;
   }
@@ -555,6 +559,8 @@ text-decoration: none;
     float: right;
     margin-left: 5px;
     text-decoration: none;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
   }
   
   .active:after {
