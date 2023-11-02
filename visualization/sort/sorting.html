@@ -2,9 +2,49 @@
   <head>
     <meta charset="utf-8">
     <title>Sorting Visualizer</title>
-    <link rel="shortcut icon" type="image/ico" href="client/styling/icon.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="/image/ALgoRangericon.png"/>
   </head>
+  <link rel="stylesheet" href="/styles/sorting_homepage.css">
   <body>
+<!-- 1] navbar -->
+<!-- Navbar content -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <img src="/image/ALgoRangericon.png" class="img-thumbnail" alt="icon">
+    <a class="navbar-brand" href="#">Algoranger</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="/home_page.html" action="">Home <span class="sr-only">(current)</span></a>
+            </li>
+<!-- Learn button 1.7 -->
+            <li class="nav-item active">
+              <a class="nav-link" href="/learn/learnpage.html" action="">Learn <span class="sr-only">(current)</span></a>
+            </li>
+<!-- Practice button 1.6 -->
+            <li class="nav-item active">
+              <a class="nav-link" href="#" action="">Practice <span class="sr-only">(current)</span></a>
+            </li>
+<!-- visualization button 1.5 -->
+            <li class="nav-item active">
+              <a class="nav-link" href="/visualization/sort/sorting.html" action="">visualization <span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+
+        <div>
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="/profile/My_profile.html" action="">My_profile <span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+        </div>
+    </div>
+</nav>
+
     <div id="app" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="client/public/bundle.js" type="text/javascript"></script>
