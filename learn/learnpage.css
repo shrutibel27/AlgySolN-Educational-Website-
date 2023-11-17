@@ -3,11 +3,11 @@
 
 *{
     box-sizing: border-box;
-    margin: 0 ;
+    margin: 10 ;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    transition: all 0.4s ease;;
+    transition: all 0.4s ease;
 }
 
 
@@ -19,11 +19,18 @@
     --text-color: #18191A;
     --search-bar: #F2F2F2;
     --search-text: #010718;
+
+
 }
 
 body{
     height: 100vh;
     background-color: var(--body-color);
+    align-items: center;
+    justify-content: center;
+ 
+    align-content: center;
+    
 }
 
 body.dark{
@@ -32,6 +39,11 @@ body.dark{
     --side-nav: #242526;
     --text-color: white;
     --search-bar: #242526;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    
+   
 }
 .nav_quotes{
     width: 100%;
@@ -44,6 +56,7 @@ body.dark{
      justify-content: space-evenly;
   align-content: space-around;
   align-items: center;
+  
 }
 /* drop down css code
  */
@@ -151,7 +164,7 @@ nav .nav-bar{
     padding: 0 30px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 nav .nav-bar .sidebarOpen{
@@ -337,6 +350,15 @@ body.dark .search-field i{
         display: block;
     }
 
+body{
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+   
+    
+}
+
+
     .menu{
         position: fixed;
         height: 100%;
@@ -397,6 +419,10 @@ body.dark .search-field i{
     text-align: left;
     outline: none;
     font-size: 15px;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    
   }
   
   .active, .collapsible:hover {
@@ -409,6 +435,12 @@ body.dark .search-field i{
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     background-color: #f1f1f1;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    width: 100%;
+
+    
   }
 
 
@@ -437,11 +469,11 @@ border: 2px solid black;
 
   }
 .Note_div{
-margin-top: 15px;
+    padding: 10px 10px;
+    margin: 0 auto;
 max-width:1000px;
 height: 200px;
-margin-left: 100px;
-margin-right: 100px;
+
 text-wrap: wrap;
 text-align: start;
 color: white;
@@ -462,8 +494,7 @@ background-color: #18191A;
     text-align: center;
     align-items: center;
     justify-content: center;
-    margin-bottom: 30px;
-    margin-top: 10px;
+    margin: 0 auto;
     
    
   }
@@ -477,6 +508,7 @@ background-color: #18191A;
     position: absolute;
     text-align: end;
     padding-right: 5px;
+    margin: 0 auto;
 
   }
   
@@ -501,6 +533,9 @@ margin-right: 100px;
     height: 45px;
    padding-bottom: 10px;
    text-decoration: none;
+   align-items: center;
+   justify-items: center;
+   justify-content: center;
   }
   .active, .collapsible:hover {
     background-color: #18191A;
@@ -515,9 +550,15 @@ text-decoration: none;
     background-color: #18191A;
     color: white;
     width: 1000px;
-    height: 200px;
-    margin-left: 100px;
-    margin-right: 100px;
+    height: auto;
+    text-decoration: none;
+   margin: 0 auto;
+    align-items: center;
+    justify-content:center;
+    align-content: center;
+    text-align: left;
+    
+    
   }
 
   .collapsible:after {
@@ -535,15 +576,28 @@ text-decoration: none;
 
 
   @media screen and (max-width:700px) {
+body{
 
+margin: 0 auto;
+
+
+
+}
 .Note_div{
+    margin: 0 auto;
     font-size: 12px;
     width: 80%;
     height: 100px;
-    margin-left: 50px;
-    margin-right: 50px;
+   
 padding-bottom: 20px;
 padding-top: 20px;
+align-content: center;
+justify-content: center;
+align-items: center;
+text-align: center;
+
+
+
 
 }
 
@@ -560,43 +614,59 @@ padding-top: 20px;
         height: 60px;
        padding-bottom: 10px;
        text-decoration: none;
+       
 
 }
+.content {
+    padding: 0 18px;
+    max-height: 0;
+text-decoration: none;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #18191A;
+    color: white;
+    width: 1000px;
+    height: auto;
+    text-decoration: none;
+    margin-left: 100px;
+    margin-right: 100px;
+    align-items: center;
+    justify-content:center;
+    align-content: center;
+    text-align: left;
+    
+    
+  }
 .quote_div{
-    margin-top: 5px;
-    margin-left: 50px;
-    margin-right: 50px;
-
+   margin:0 auto;
 width: 100%;
 height: 50px;
-
-
 padding-top: 10px;
 font-weight: 800;
 border: 2px solid black;
-
+max-width: 720px;
   }
 
-  .animated-progress {
-    width: 80%;
+
+
+.animated-progress {
+    max-width: 480px;
     height: 60px;
     border-radius: 5px;
     margin-left: 100px;
     margin-right: 100px;
     border: 1px solid rgb(189, 113, 113);
     overflow: hidden;
-    position: relative;
+   
     text-align: center;
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
     margin-top: 100px;
 
-    
-   
   }
 
-  .animated-progress span {
+.animated-progress span {
     height: 100%;
     display: block;
     width: 0;
@@ -606,11 +676,11 @@ border: 2px solid black;
     text-align: end;
     padding-right: 5px;
     margin-right: 100px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
 
   }
-  
 
-
-
-    
   }
