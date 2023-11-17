@@ -2,30 +2,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 *{
-    margin: 0;
+    box-sizing: border-box;
+    margin: 10 ;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     transition: all 0.4s ease;
-    background-color: #282525;
-color: white;
-
+    background-color:#010718;
+    height: auto;
+    background-color: gray !important;
 }
 
 
 /* ===== Colours ===== */
+:root{
+    --body-color: white;
+    --nav-color: #4070F4;
+    --side-nav: #010718;
+    --text-color: #18191A;
+    --search-bar: #F2F2F2;
+    --search-text: #010718;
 
-body{
-    height: 100vh;
-    background-color: #010718;
+
+}
+
+
+
+
+body.dark{
+    --body-color: black;
+    --nav-color: #242526;
+    --side-nav: #242526;
+    --text-color: white;
+    --search-bar: #242526;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    margin: 0 auto;
+    
+   
 }
 
 .nav_quotes{
     width: 100%;
     height: 50px;
- 
+ margin: 0 auto;
  background-color: white;
- margin-top: 70px;
+
  color: #282525;
 
      justify-content: space-evenly;
@@ -46,7 +69,7 @@ margin-bottom: 30px;
 
 }
 .responsive {
-    max-width: 100%;
+    max-width: 720px;
     height: auto;
   }
 
@@ -310,8 +333,10 @@ body.dark .search-field i{
     color: white;
     background-color:#010718;
     color: white;
+}
+    
+@media screen and (max-width:700px) {
 
-@media (max-width: 790px) {
     nav .nav-bar .sidebarOpen{
         display: block;
     }
@@ -377,6 +402,7 @@ body.dark .search-field i{
     text-align: left;
     outline: none;
     font-size: 15px;
+    margin: 0 auto;
   }
   
   .active, .collapsible:hover {
@@ -393,8 +419,8 @@ body.dark .search-field i{
   }
 
 
-  .topic_div{
-    margin-top: 70px;
+.topic_div{
+  margin:  0 auto;
 width: 100%;
 height: 80px;
 background-color: black;
@@ -405,7 +431,7 @@ font-weight: 800;
   }
 
 .quote_div{
-    margin-top: 2px;
+   margin: 0 auto;
 width: 100%;
 height: 50px;
 background-color: #282525;
@@ -418,7 +444,7 @@ border: 2px solid black;
 
   }
 .Note_div{
-margin-top: 15px;
+margin: 0 auto;
 max-width:800px;
 height: 200px;
 margin-left: 100px;
@@ -428,8 +454,6 @@ color: white;
 font-size: 15px;
 background-color:#010718;
 color: white;
-
-
   }
 
 .img_explained{
@@ -447,8 +471,6 @@ color: white;
       }
 
   
- 
-  
 
   /* Style the button that is used to open and close the collapsible content */
 .collapsible{
@@ -456,8 +478,7 @@ color: white;
     color: white;
     cursor: pointer;
     padding: 18px;
-margin-top: 10px;
-    margin-left: 100px;
+    margin: 0 auto;
     border: 2px solid black;
     text-align: left;
     outline: none;
@@ -466,13 +487,14 @@ margin-top: 10px;
     height: 45px;
    padding-bottom: 15px;
    text-decoration: none;
+   margin: 0 auto;
   }
-  .active, .collapsible:hover {
+.active, .collapsible:hover {
     background-color: #18191A;
     background-color: #282525;
     color: white;
   }
-  .content {
+.content {
     padding: 0 18px;
     max-height: 0;
 text-decoration: none;
@@ -482,10 +504,10 @@ text-decoration: none;
     color: white;
     width: 800px;
     
-    margin-left: 100px;
+    margin: 0 auto;
   }
 
-  .collapsible:after {
+.collapsible:after {
     content: '\02795'; /* Unicode character for "plus" sign (+) */
     font-size: 13px;
     color: white;
@@ -499,4 +521,5 @@ color: white;
   .active:after {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
   }
-}
+
+
