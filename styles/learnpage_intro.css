@@ -58,14 +58,13 @@ body.dark{
 
 .array_img{
 
-width: 800px;
+
 background-repeat: no-repeat;
 height: auto;
+width: 900px;
 object-fit: contain;
-margin-left: 100px;
-margin-right: 100px;
-margin-top: 30px;
-margin-bottom: 30px;
+margin: 0 auto;
+
 
 }
 .responsive {
