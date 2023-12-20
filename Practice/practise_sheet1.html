@@ -1,0 +1,890 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" type="image/png" href="/image/ALgoRangericon.png"/>
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+
+    <title>Practice Sheet 1</title>
+  </head>
+  <link rel="stylesheet" href="practise_sheet1.css">
+  
+  <style>
+    body {
+      
+      
+        color: rgb(248, 248, 248);
+        margin: 0px;
+        padding: 0px;
+        background: black;
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+    }
+    .Note_div{
+    padding: 10px 10px;
+    margin: 20px;
+max-width:10000px;
+height: 200px;
+
+text-wrap: wrap;
+text-align: start;
+color: white;
+font-size: 20px;
+background-color: black;
+
+
+  }
+</style>
+  <body>
+    
+<!-- 1] navbar -->
+<!-- Navbar content -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <img src="/image/ALgoRangericon.png" class="img-thumbnail" alt="icon">
+      <a class="navbar-brand" href="#">Algoranger</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                  <a class="nav-link" href="/home_page.html" action="">Home <span class="sr-only">(current)</span></a>
+              </li>
+<!-- Learn button 1.7 -->
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="/learn/learnpage.html" id="navbarDropdown" role="button"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Learn
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Array</a>
+                      <a class="dropdown-item" href="#">String</a>
+                      <!-- <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a> -->
+                  </div>
+              </li>
+<!-- Practice button 1.6 -->
+              <!-- <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Practice
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">1] SDE Sheet <br>(for anyone who knows DSA)</a>
+                      <a class="dropdown-item" href="#">2] 79 Q's SDE Sheet <br>(for anyone with minimum time for
+                          interviews)</a> -->
+                      <!-- <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a> -->
+                  <!-- </div>
+              </li> -->
+<!-- visualization button 1.5 -->
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="/visualization/visualization_page.html" id="navbarDropdown" role="button"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      visualization
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="/visualization/sort/sorting.html">Sorting Algorithm</a>
+                      <a class="dropdown-item" href="/visualization/path/pathfinding_homePg.html">Shortest Path Finding Algorithm</a>
+                      <!-- <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">Something else here</a> -->
+                  </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Us</a>
+              </li>
+          </ul>
+
+          <div>
+              <ul class="navbar-nav mr-auto">
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      My Profile
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="profile/My_profile.html">My Profile</a>
+                      <a class="dropdown-item" href="#">Acct. Setting</a>
+                      <a class="dropdown-item" href="#">Support</a>
+                      <a class="dropdown-item" href="#">Logout</a>
+                      <!-- <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">Something else here</a> -->
+                  </div>
+              </li>
+          </ul>
+          </div>
+      </div>
+  </nav>
+
+  <div class="box">
+    <div class="scroll"> 
+   
+   <table>
+     <thead>
+         <tr>
+            
+             <th>Array Problem </th>
+             <th>PL-1</th>
+             <th>PL-2</th>
+             <th>Solution</th>
+
+         </tr>
+     </thead>
+     <tbody>
+         <tr>
+            
+             <td title>
+                 <a target="_blank" rel="noopener" href="https://takeuforward.org/data-structure/find-the-largest-element-in-an-array/">Largest
+   Element in an Array</a>
+             </td>
+             <td title="CodeStudio link">
+                 <a target="_blank" rel="noopener" href="https://www.codingninjas.com/codestudio/problems/largest-element-in-the-array-largest-element-in-the-array_5026279?utm_source=striver&amp;utm_medium=website&amp;utm_campaign=a_zcoursetuf">
+                     <img class="lazy lazy-hidden aligncenter wp-image-1830 lazy-loaded" src="/image/codin_ninja.webp" data-lazy-type="image" data-src="/image/codin_ninja.webp" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/codin_ninja.webp">
+                     <noscript>
+                         <img class="aligncenter wp-image-1830 lazy-loaded" src="/image/codin_ninja.webp" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/codin_ninja.webp">
+                     </noscript>
+                 </a>
+             </td>
+            
+             <td title="Leetcode link"></td>
+             <td title="YouTube Solution">
+                <button>
+                    <img class="lazy lazy-hidden" src="/image/youtube.png" data-lazy-type="image" data-src="/image/youtube.png" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/youtube.png">
+                    <noscript>
+                        <img src="/image/youtube.png" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/youtube.png">
+                    </noscript>
+                </button>
+            </td>
+         </tr>
+         <tr>
+           
+             <td title>
+                 <a target="_blank" rel="noopener" href="https://takeuforward.org/data-structure/check-if-an-array-is-sorted/">Check if the
+   array is sorted</a>
+             </td>
+             <td title="CodeStudio link">
+                 <a target="_blank" rel="noopener" href="https://www.codingninjas.com/codestudio/problems/ninja-and-the-sorted-check_6581957?utm_source=striver&amp;utm_medium=website&amp;utm_campaign=a_zcoursetuf">
+                     <img class="lazy lazy-hidden aligncenter wp-image-1830 lazy-loaded" src="/image/codin_ninja.webp" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png">
+                     <noscript>
+                         <img class="aligncenter wp-image-1830 lazy-loaded" src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png">
+                     </noscript>
+                 </a>
+             </td>
+            
+             <td title="Leetcode link">
+                 <a target="_blank" rel="noopener" href="https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/#:~:text=Input%3A%20nums%20%3D%20%5B2%2C,no%20rotation)%20to%20make%20nums.">
+                     <img class="lazy lazy-hidden aligncenter wp-image-1830 lazy-loaded" src="/image/leetcode-1-150x150.png.webp" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2022/08/leetcode-1-150x150.png.webp" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2022/08/leetcode-1-150x150.png.webp">
+                     <noscript>
+                         <img class="aligncenter wp-image-1830 lazy-loaded" src="https://takeuforward.org/wp-content/uploads/2022/08/leetcode-1-150x150.png.webp" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2022/08/leetcode-1-150x150.png.webp">
+                     </noscript>
+                 </a>
+             </td>
+             <td title="YouTube Solution">
+                <button>
+                    <img class="lazy lazy-hidden" src="/image/youtube.png" data-lazy-type="image" data-src="/image/youtube.png" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/youtube.png">
+                    <noscript>
+                        <img src="/image/youtube.png" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/youtube.png">
+                    </noscript>
+                </button>
+            </td>
+            
+         </tr>
+         <tr>
+            
+             <td title="Second Largest Element in an Array without sorting">
+                 <a target="_blank" rel="noopener" href="https://takeuforward.org/data-structure/find-second-smallest-and-second-largest-element-in-an-array/">Second
+   Largest Element in an Array without…</a>
+             </td>
+             <td title="CodeStudio link">
+                 <a target="_blank" rel="noopener" href="https://www.codingninjas.com/codestudio/problems/ninja-and-the-second-order-elements_6581960?utm_source=striver&amp;utm_medium=website&amp;utm_campaign=a_zcoursetuf">
+                     <img class="lazy lazy-hidden aligncenter wp-image-1830 lazy-loaded" src="/image/codin_ninja.webp" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png">
+                     <noscript>
+                         <img class="aligncenter wp-image-1830 lazy-loaded" src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png">
+                     </noscript>
+                 </a>
+             </td>
+            
+             <td title="Leetcode link"></td>
+             <td title="YouTube Solution">
+                <button>
+                    <img class="lazy lazy-hidden" src="/image/youtube.png" data-lazy-type="image" data-src="/image/youtube.png" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/youtube.png">
+                    <noscript>
+                        <img src="/image/youtube.png" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/youtube.png">
+                    </noscript>
+                </button>
+            </td>
+         </tr>
+         <tr>
+        
+             <td title>
+                 <a target="_blank" rel="noopener" href="https://takeuforward.org/data-structure/linear-search-in-c/">Linear Search</a>
+             </td>
+             <td title="CodeStudio link">
+                 <a target="_blank" rel="noopener" href="https://www.codingninjas.com/codestudio/problems/linear-search_6922070?utm_source=striver&amp;utm_medium=website&amp;utm_campaign=a_zcoursetuf">
+                     <img class="lazy lazy-hidden aligncenter wp-image-1830 lazy-loaded" src="/image/codin_ninja.webp" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png">
+                     <noscript>
+                         <img class="aligncenter wp-image-1830 lazy-loaded" src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png">
+                     </noscript>
+                 </a>
+             </td>
+          
+             <td title="Leetcode link"></td>
+             <td title="YouTube Solution">
+                <button>
+                    <img class="lazy lazy-hidden" src="/image/youtube.png" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2022/08/youtube-icon-42001-300x300.png.webp">
+                    <noscript>
+                        <img src="/image/youtube.png" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/youtube.png">
+                    </noscript>
+                </button>
+            </td>
+         </tr>
+         <tr>
+             
+             <td title>
+                 <a target="_blank" rel="noopener" href="https://takeuforward.org/data-structure/left-rotate-the-array-by-one/">Left Rotate an
+   array by one place</a>
+             </td>
+             <td title="CodeStudio link">
+                 <a target="_blank" rel="noopener" href="https://www.codingninjas.com/codestudio/problems/left-rotate-an-array-by-one_5026278?utm_source=striver&amp;utm_medium=website&amp;utm_campaign=a_zcoursetuf">
+                     <img class="lazy lazy-hidden aligncenter wp-image-1830 lazy-loaded" src="/image/codin_ninja.webp" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png">
+                     <noscript>
+                         <img class="aligncenter wp-image-1830 lazy-loaded" src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png">
+                     </noscript>
+                 </a>
+             </td>
+            
+             <td title="Leetcode link">
+                 <a target="_blank" rel="noopener" href="https://leetcode.com/problems/rotate-array/">
+                     <img class="lazy lazy-hidden aligncenter wp-image-1830 lazy-loaded" src="/image/leetcode-1-150x150.png.webp" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2022/08/leetcode-1-150x150.png.webp" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2022/08/leetcode-1-150x150.png.webp">
+                     <noscript>
+                         <img class="aligncenter wp-image-1830 lazy-loaded" src="https://takeuforward.org/wp-content/uploads/2022/08/leetcode-1-150x150.png.webp" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2022/08/leetcode-1-150x150.png.webp">
+                     </noscript>
+                 </a>
+             </td>
+             <td title="YouTube Solution">
+                <button>
+                    <img class="lazy lazy-hidden" src="/image/youtube.png" data-lazy-type="image" data-src="/image/youtube.png" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/youtube.png">
+                    <noscript>
+                        <img src="/image/youtube.png" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/youtube.png">
+                    </noscript>
+                </button>
+            </td>
+            
+         </tr>
+
+         <tr>
+            
+            <td title>
+                <a target="_blank" rel="noopener" href="https://takeuforward.org/data-structure/find-the-largest-element-in-an-array/">Largest
+  Element in an Array</a>
+            </td>
+            <td title="CodeStudio link">
+                <a target="_blank" rel="noopener" href="https://www.codingninjas.com/codestudio/problems/largest-element-in-the-array-largest-element-in-the-array_5026279?utm_source=striver&amp;utm_medium=website&amp;utm_campaign=a_zcoursetuf">
+                    <img class="lazy lazy-hidden aligncenter wp-image-1830 lazy-loaded" src="/image/codin_ninja.webp" data-lazy-type="image" data-src="/image/codin_ninja.webp" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/codin_ninja.webp">
+                    <noscript>
+                        <img class="aligncenter wp-image-1830 lazy-loaded" src="/image/codin_ninja.webp" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/codin_ninja.webp">
+                    </noscript>
+                </a>
+            </td>
+           
+            <td title="Leetcode link"></td>
+            <td title="YouTube Solution">
+               <button>
+                   <img class="lazy lazy-hidden" src="/image/youtube.png" data-lazy-type="image" data-src="/image/youtube.png" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/youtube.png">
+                   <noscript>
+                       <img src="/image/youtube.png" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/youtube.png">
+                   </noscript>
+               </button>
+           </td>
+        </tr>
+     </tbody>
+   </table>
+
+
+      </div>
+ 
+  <div class="scroll">
+    
+    <table>
+        <thead>
+            <tr>
+               
+                <th> String Problem </th>
+                <th>PL-1</th>
+                <th>PL-2</th>
+                <th>Solution</th>
+   
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+               
+                <td title>
+                    <a target="_blank" rel="noopener" href="https://takeuforward.org/data-structure/find-the-largest-element-in-an-array/">Largest
+      Element in an Array</a>
+                </td>
+                <td title="CodeStudio link">
+                    <a target="_blank" rel="noopener" href="https://www.codingninjas.com/codestudio/problems/largest-element-in-the-array-largest-element-in-the-array_5026279?utm_source=striver&amp;utm_medium=website&amp;utm_campaign=a_zcoursetuf">
+                        <img class="lazy lazy-hidden aligncenter wp-image-1830 lazy-loaded" src="/image/codin_ninja.webp" data-lazy-type="image" data-src="/image/codin_ninja.webp" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/codin_ninja.webp">
+                        <noscript>
+                            <img class="aligncenter wp-image-1830 lazy-loaded" src="/image/codin_ninja.webp" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/codin_ninja.webp">
+                        </noscript>
+                    </a>
+                </td>
+               
+                <td title="Leetcode link"></td>
+                <td title="YouTube Solution">
+                   <button>
+                       <img class="lazy lazy-hidden" src="/image/youtube.png" data-lazy-type="image" data-src="/image/youtube.png" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/youtube.png">
+                       <noscript>
+                           <img src="/image/youtube.png" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/youtube.png">
+                       </noscript>
+                   </button>
+               </td>
+            </tr>
+            <tr>
+              
+                <td title>
+                    <a target="_blank" rel="noopener" href="https://takeuforward.org/data-structure/check-if-an-array-is-sorted/">Check if the
+      array is sorted</a>
+                </td>
+                <td title="CodeStudio link">
+                    <a target="_blank" rel="noopener" href="https://www.codingninjas.com/codestudio/problems/ninja-and-the-sorted-check_6581957?utm_source=striver&amp;utm_medium=website&amp;utm_campaign=a_zcoursetuf">
+                        <img class="lazy lazy-hidden aligncenter wp-image-1830 lazy-loaded" src="/image/codin_ninja.webp" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png">
+                        <noscript>
+                            <img class="aligncenter wp-image-1830 lazy-loaded" src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png">
+                        </noscript>
+                    </a>
+                </td>
+               
+                <td title="Leetcode link">
+                    <a target="_blank" rel="noopener" href="https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/#:~:text=Input%3A%20nums%20%3D%20%5B2%2C,no%20rotation)%20to%20make%20nums.">
+                        <img class="lazy lazy-hidden aligncenter wp-image-1830 lazy-loaded" src="/image/leetcode-1-150x150.png.webp" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2022/08/leetcode-1-150x150.png.webp" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2022/08/leetcode-1-150x150.png.webp">
+                        <noscript>
+                            <img class="aligncenter wp-image-1830 lazy-loaded" src="https://takeuforward.org/wp-content/uploads/2022/08/leetcode-1-150x150.png.webp" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2022/08/leetcode-1-150x150.png.webp">
+                        </noscript>
+                    </a>
+                </td>
+                <td title="YouTube Solution">
+                   <button>
+                       <img class="lazy lazy-hidden" src="/image/youtube.png" data-lazy-type="image" data-src="/image/youtube.png" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/youtube.png">
+                       <noscript>
+                           <img src="/image/youtube.png" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/youtube.png">
+                       </noscript>
+                   </button>
+               </td>
+               
+            </tr>
+            <tr>
+               
+                <td title="Second Largest Element in an Array without sorting">
+                    <a target="_blank" rel="noopener" href="https://takeuforward.org/data-structure/find-second-smallest-and-second-largest-element-in-an-array/">Second
+      Largest Element in an Array without…</a>
+                </td>
+                <td title="CodeStudio link">
+                    <a target="_blank" rel="noopener" href="https://www.codingninjas.com/codestudio/problems/ninja-and-the-second-order-elements_6581960?utm_source=striver&amp;utm_medium=website&amp;utm_campaign=a_zcoursetuf">
+                        <img class="lazy lazy-hidden aligncenter wp-image-1830 lazy-loaded" src="/image/codin_ninja.webp" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png">
+                        <noscript>
+                            <img class="aligncenter wp-image-1830 lazy-loaded" src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png">
+                        </noscript>
+                    </a>
+                </td>
+               
+                <td title="Leetcode link"></td>
+                <td title="YouTube Solution">
+                   <button>
+                       <img class="lazy lazy-hidden" src="/image/youtube.png" data-lazy-type="image" data-src="/image/youtube.png" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/youtube.png">
+                       <noscript>
+                           <img src="/image/youtube.png" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/youtube.png">
+                       </noscript>
+                   </button>
+               </td>
+            </tr>
+            <tr>
+           
+                <td title>
+                    <a target="_blank" rel="noopener" href="https://takeuforward.org/data-structure/linear-search-in-c/">Linear Search</a>
+                </td>
+                <td title="CodeStudio link">
+                    <a target="_blank" rel="noopener" href="https://www.codingninjas.com/codestudio/problems/linear-search_6922070?utm_source=striver&amp;utm_medium=website&amp;utm_campaign=a_zcoursetuf">
+                        <img class="lazy lazy-hidden aligncenter wp-image-1830 lazy-loaded" src="/image/codin_ninja.webp" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png">
+                        <noscript>
+                            <img class="aligncenter wp-image-1830 lazy-loaded" src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png">
+                        </noscript>
+                    </a>
+                </td>
+             
+                <td title="Leetcode link"></td>
+                <td title="YouTube Solution">
+                   <button>
+                       <img class="lazy lazy-hidden" src="/image/youtube.png" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2022/08/youtube-icon-42001-300x300.png.webp">
+                       <noscript>
+                           <img src="/image/youtube.png" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/youtube.png">
+                       </noscript>
+                   </button>
+               </td>
+            </tr>
+            <tr>
+                
+                <td title>
+                    <a target="_blank" rel="noopener" href="https://takeuforward.org/data-structure/left-rotate-the-array-by-one/">Left Rotate an
+      array by one place</a>
+                </td>
+                <td title="CodeStudio link">
+                    <a target="_blank" rel="noopener" href="https://www.codingninjas.com/codestudio/problems/left-rotate-an-array-by-one_5026278?utm_source=striver&amp;utm_medium=website&amp;utm_campaign=a_zcoursetuf">
+                        <img class="lazy lazy-hidden aligncenter wp-image-1830 lazy-loaded" src="/image/codin_ninja.webp" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png">
+                        <noscript>
+                            <img class="aligncenter wp-image-1830 lazy-loaded" src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png">
+                        </noscript>
+                    </a>
+                </td>
+               
+                <td title="Leetcode link">
+                    <a target="_blank" rel="noopener" href="https://leetcode.com/problems/rotate-array/">
+                        <img class="lazy lazy-hidden aligncenter wp-image-1830 lazy-loaded" src="/image/leetcode-1-150x150.png.webp" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2022/08/leetcode-1-150x150.png.webp" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2022/08/leetcode-1-150x150.png.webp">
+                        <noscript>
+                            <img class="aligncenter wp-image-1830 lazy-loaded" src="https://takeuforward.org/wp-content/uploads/2022/08/leetcode-1-150x150.png.webp" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2022/08/leetcode-1-150x150.png.webp">
+                        </noscript>
+                    </a>
+                </td>
+                <td title="YouTube Solution">
+                   <button>
+                       <img class="lazy lazy-hidden" src="/image/youtube.png" data-lazy-type="image" data-src="/image/youtube.png" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/youtube.png">
+                       <noscript>
+                           <img src="/image/youtube.png" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/youtube.png">
+                       </noscript>
+                   </button>
+               </td>
+               
+            </tr>
+   
+            <tr>
+               
+               <td title>
+                   <a target="_blank" rel="noopener" href="https://takeuforward.org/data-structure/find-the-largest-element-in-an-array/">Largest
+     Element in an Array</a>
+               </td>
+               <td title="CodeStudio link">
+                   <a target="_blank" rel="noopener" href="https://www.codingninjas.com/codestudio/problems/largest-element-in-the-array-largest-element-in-the-array_5026279?utm_source=striver&amp;utm_medium=website&amp;utm_campaign=a_zcoursetuf">
+                       <img class="lazy lazy-hidden aligncenter wp-image-1830 lazy-loaded" src="/image/codin_ninja.webp" data-lazy-type="image" data-src="/image/codin_ninja.webp" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/codin_ninja.webp">
+                       <noscript>
+                           <img class="aligncenter wp-image-1830 lazy-loaded" src="/image/codin_ninja.webp" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/codin_ninja.webp">
+                       </noscript>
+                   </a>
+               </td>
+              
+               <td title="Leetcode link"></td>
+               <td title="YouTube Solution">
+                  <button>
+                      <img class="lazy lazy-hidden" src="/image/youtube.png" data-lazy-type="image" data-src="/image/youtube.png" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/youtube.png">
+                      <noscript>
+                          <img src="/image/youtube.png" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/youtube.png">
+                      </noscript>
+                  </button>
+              </td>
+           </tr>
+        </tbody>
+      </table>
+
+  </div>
+  
+
+  </div>
+
+<div class="box1">
+  <div class="scroll">
+    <table>
+        <thead>
+            <tr>
+               
+                <th> LinkedList Problem </th>
+                <th>PL-1</th>
+                <th>PL-2</th>
+                <th>Solution</th>
+   
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+               
+                <td title>
+                    <a target="_blank" rel="noopener" href="https://takeuforward.org/data-structure/find-the-largest-element-in-an-array/">Largest
+      Element in an Array</a>
+                </td>
+                <td title="CodeStudio link">
+                    <a target="_blank" rel="noopener" href="https://www.codingninjas.com/codestudio/problems/largest-element-in-the-array-largest-element-in-the-array_5026279?utm_source=striver&amp;utm_medium=website&amp;utm_campaign=a_zcoursetuf">
+                        <img class="lazy lazy-hidden aligncenter wp-image-1830 lazy-loaded" src="/image/codin_ninja.webp" data-lazy-type="image" data-src="/image/codin_ninja.webp" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/codin_ninja.webp">
+                        <noscript>
+                            <img class="aligncenter wp-image-1830 lazy-loaded" src="/image/codin_ninja.webp" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/codin_ninja.webp">
+                        </noscript>
+                    </a>
+                </td>
+               
+                <td title="Leetcode link"></td>
+                <td title="YouTube Solution">
+                   <button>
+                       <img class="lazy lazy-hidden" src="/image/youtube.png" data-lazy-type="image" data-src="/image/youtube.png" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/youtube.png">
+                       <noscript>
+                           <img src="/image/youtube.png" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/youtube.png">
+                       </noscript>
+                   </button>
+               </td>
+            </tr>
+            <tr>
+              
+                <td title>
+                    <a target="_blank" rel="noopener" href="https://takeuforward.org/data-structure/check-if-an-array-is-sorted/">Check if the
+      array is sorted</a>
+                </td>
+                <td title="CodeStudio link">
+                    <a target="_blank" rel="noopener" href="https://www.codingninjas.com/codestudio/problems/ninja-and-the-sorted-check_6581957?utm_source=striver&amp;utm_medium=website&amp;utm_campaign=a_zcoursetuf">
+                        <img class="lazy lazy-hidden aligncenter wp-image-1830 lazy-loaded" src="/image/codin_ninja.webp" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png">
+                        <noscript>
+                            <img class="aligncenter wp-image-1830 lazy-loaded" src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png">
+                        </noscript>
+                    </a>
+                </td>
+               
+                <td title="Leetcode link">
+                    <a target="_blank" rel="noopener" href="https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/#:~:text=Input%3A%20nums%20%3D%20%5B2%2C,no%20rotation)%20to%20make%20nums.">
+                        <img class="lazy lazy-hidden aligncenter wp-image-1830 lazy-loaded" src="/image/leetcode-1-150x150.png.webp" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2022/08/leetcode-1-150x150.png.webp" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2022/08/leetcode-1-150x150.png.webp">
+                        <noscript>
+                            <img class="aligncenter wp-image-1830 lazy-loaded" src="https://takeuforward.org/wp-content/uploads/2022/08/leetcode-1-150x150.png.webp" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2022/08/leetcode-1-150x150.png.webp">
+                        </noscript>
+                    </a>
+                </td>
+                <td title="YouTube Solution">
+                   <button>
+                       <img class="lazy lazy-hidden" src="/image/youtube.png" data-lazy-type="image" data-src="/image/youtube.png" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/youtube.png">
+                       <noscript>
+                           <img src="/image/youtube.png" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/youtube.png">
+                       </noscript>
+                   </button>
+               </td>
+               
+            </tr>
+            <tr>
+               
+                <td title="Second Largest Element in an Array without sorting">
+                    <a target="_blank" rel="noopener" href="https://takeuforward.org/data-structure/find-second-smallest-and-second-largest-element-in-an-array/">Second
+      Largest Element in an Array without…</a>
+                </td>
+                <td title="CodeStudio link">
+                    <a target="_blank" rel="noopener" href="https://www.codingninjas.com/codestudio/problems/ninja-and-the-second-order-elements_6581960?utm_source=striver&amp;utm_medium=website&amp;utm_campaign=a_zcoursetuf">
+                        <img class="lazy lazy-hidden aligncenter wp-image-1830 lazy-loaded" src="/image/codin_ninja.webp" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png">
+                        <noscript>
+                            <img class="aligncenter wp-image-1830 lazy-loaded" src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png">
+                        </noscript>
+                    </a>
+                </td>
+               
+                <td title="Leetcode link"></td>
+                <td title="YouTube Solution">
+                   <button>
+                       <img class="lazy lazy-hidden" src="/image/youtube.png" data-lazy-type="image" data-src="/image/youtube.png" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/youtube.png">
+                       <noscript>
+                           <img src="/image/youtube.png" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/youtube.png">
+                       </noscript>
+                   </button>
+               </td>
+            </tr>
+            <tr>
+           
+                <td title>
+                    <a target="_blank" rel="noopener" href="https://takeuforward.org/data-structure/linear-search-in-c/">Linear Search</a>
+                </td>
+                <td title="CodeStudio link">
+                    <a target="_blank" rel="noopener" href="https://www.codingninjas.com/codestudio/problems/linear-search_6922070?utm_source=striver&amp;utm_medium=website&amp;utm_campaign=a_zcoursetuf">
+                        <img class="lazy lazy-hidden aligncenter wp-image-1830 lazy-loaded" src="/image/codin_ninja.webp" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png">
+                        <noscript>
+                            <img class="aligncenter wp-image-1830 lazy-loaded" src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png">
+                        </noscript>
+                    </a>
+                </td>
+             
+                <td title="Leetcode link"></td>
+                <td title="YouTube Solution">
+                   <button>
+                       <img class="lazy lazy-hidden" src="/image/youtube.png" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2022/08/youtube-icon-42001-300x300.png.webp">
+                       <noscript>
+                           <img src="/image/youtube.png" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/youtube.png">
+                       </noscript>
+                   </button>
+               </td>
+            </tr>
+            <tr>
+                
+                <td title>
+                    <a target="_blank" rel="noopener" href="https://takeuforward.org/data-structure/left-rotate-the-array-by-one/">Left Rotate an
+      array by one place</a>
+                </td>
+                <td title="CodeStudio link">
+                    <a target="_blank" rel="noopener" href="https://www.codingninjas.com/codestudio/problems/left-rotate-an-array-by-one_5026278?utm_source=striver&amp;utm_medium=website&amp;utm_campaign=a_zcoursetuf">
+                        <img class="lazy lazy-hidden aligncenter wp-image-1830 lazy-loaded" src="/image/codin_ninja.webp" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png">
+                        <noscript>
+                            <img class="aligncenter wp-image-1830 lazy-loaded" src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png">
+                        </noscript>
+                    </a>
+                </td>
+               
+                <td title="Leetcode link">
+                    <a target="_blank" rel="noopener" href="https://leetcode.com/problems/rotate-array/">
+                        <img class="lazy lazy-hidden aligncenter wp-image-1830 lazy-loaded" src="/image/leetcode-1-150x150.png.webp" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2022/08/leetcode-1-150x150.png.webp" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2022/08/leetcode-1-150x150.png.webp">
+                        <noscript>
+                            <img class="aligncenter wp-image-1830 lazy-loaded" src="https://takeuforward.org/wp-content/uploads/2022/08/leetcode-1-150x150.png.webp" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2022/08/leetcode-1-150x150.png.webp">
+                        </noscript>
+                    </a>
+                </td>
+                <td title="YouTube Solution">
+                   <button>
+                       <img class="lazy lazy-hidden" src="/image/youtube.png" data-lazy-type="image" data-src="/image/youtube.png" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/youtube.png">
+                       <noscript>
+                           <img src="/image/youtube.png" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/youtube.png">
+                       </noscript>
+                   </button>
+               </td>
+               
+            </tr>
+   
+            <tr>
+               
+               <td title>
+                   <a target="_blank" rel="noopener" href="https://takeuforward.org/data-structure/find-the-largest-element-in-an-array/">Largest
+     Element in an Array</a>
+               </td>
+               <td title="CodeStudio link">
+                   <a target="_blank" rel="noopener" href="https://www.codingninjas.com/codestudio/problems/largest-element-in-the-array-largest-element-in-the-array_5026279?utm_source=striver&amp;utm_medium=website&amp;utm_campaign=a_zcoursetuf">
+                       <img class="lazy lazy-hidden aligncenter wp-image-1830 lazy-loaded" src="/image/codin_ninja.webp" data-lazy-type="image" data-src="/image/codin_ninja.webp" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/codin_ninja.webp">
+                       <noscript>
+                           <img class="aligncenter wp-image-1830 lazy-loaded" src="/image/codin_ninja.webp" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/codin_ninja.webp">
+                       </noscript>
+                   </a>
+               </td>
+              
+               <td title="Leetcode link"></td>
+               <td title="YouTube Solution">
+                  <button>
+                      <img class="lazy lazy-hidden" src="/image/youtube.png" data-lazy-type="image" data-src="/image/youtube.png" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/youtube.png">
+                      <noscript>
+                          <img src="/image/youtube.png" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/youtube.png">
+                      </noscript>
+                  </button>
+              </td>
+           </tr>
+        </tbody>
+      </table>
+  </div>
+  <div class="scroll">
+    <table>
+        <thead>
+            <tr>
+               
+                <th> Sorting Problem </th>
+                <th>PL-1</th>
+                <th>PL-2</th>
+                <th>Solution</th>
+   
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+               
+                <td title>
+                    <a target="_blank" rel="noopener" href="https://takeuforward.org/data-structure/find-the-largest-element-in-an-array/">Largest
+      Element in an Array</a>
+                </td>
+                <td title="CodeStudio link">
+                    <a target="_blank" rel="noopener" href="https://www.codingninjas.com/codestudio/problems/largest-element-in-the-array-largest-element-in-the-array_5026279?utm_source=striver&amp;utm_medium=website&amp;utm_campaign=a_zcoursetuf">
+                        <img class="lazy lazy-hidden aligncenter wp-image-1830 lazy-loaded" src="/image/codin_ninja.webp" data-lazy-type="image" data-src="/image/codin_ninja.webp" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/codin_ninja.webp">
+                        <noscript>
+                            <img class="aligncenter wp-image-1830 lazy-loaded" src="/image/codin_ninja.webp" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/codin_ninja.webp">
+                        </noscript>
+                    </a>
+                </td>
+               
+                <td title="Leetcode link"></td>
+                <td title="YouTube Solution">
+                   <button>
+                       <img class="lazy lazy-hidden" src="/image/youtube.png" data-lazy-type="image" data-src="/image/youtube.png" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/youtube.png">
+                       <noscript>
+                           <img src="/image/youtube.png" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/youtube.png">
+                       </noscript>
+                   </button>
+               </td>
+            </tr>
+            <tr>
+              
+                <td title>
+                    <a target="_blank" rel="noopener" href="https://takeuforward.org/data-structure/check-if-an-array-is-sorted/">Check if the
+      array is sorted</a>
+                </td>
+                <td title="CodeStudio link">
+                    <a target="_blank" rel="noopener" href="https://www.codingninjas.com/codestudio/problems/ninja-and-the-sorted-check_6581957?utm_source=striver&amp;utm_medium=website&amp;utm_campaign=a_zcoursetuf">
+                        <img class="lazy lazy-hidden aligncenter wp-image-1830 lazy-loaded" src="/image/codin_ninja.webp" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png">
+                        <noscript>
+                            <img class="aligncenter wp-image-1830 lazy-loaded" src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png">
+                        </noscript>
+                    </a>
+                </td>
+               
+                <td title="Leetcode link">
+                    <a target="_blank" rel="noopener" href="https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/#:~:text=Input%3A%20nums%20%3D%20%5B2%2C,no%20rotation)%20to%20make%20nums.">
+                        <img class="lazy lazy-hidden aligncenter wp-image-1830 lazy-loaded" src="/image/leetcode-1-150x150.png.webp" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2022/08/leetcode-1-150x150.png.webp" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2022/08/leetcode-1-150x150.png.webp">
+                        <noscript>
+                            <img class="aligncenter wp-image-1830 lazy-loaded" src="https://takeuforward.org/wp-content/uploads/2022/08/leetcode-1-150x150.png.webp" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2022/08/leetcode-1-150x150.png.webp">
+                        </noscript>
+                    </a>
+                </td>
+                <td title="YouTube Solution">
+                   <button>
+                       <img class="lazy lazy-hidden" src="/image/youtube.png" data-lazy-type="image" data-src="/image/youtube.png" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/youtube.png">
+                       <noscript>
+                           <img src="/image/youtube.png" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/youtube.png">
+                       </noscript>
+                   </button>
+               </td>
+               
+            </tr>
+            <tr>
+               
+                <td title="Second Largest Element in an Array without sorting">
+                    <a target="_blank" rel="noopener" href="https://takeuforward.org/data-structure/find-second-smallest-and-second-largest-element-in-an-array/">Second
+      Largest Element in an Array without…</a>
+                </td>
+                <td title="CodeStudio link">
+                    <a target="_blank" rel="noopener" href="https://www.codingninjas.com/codestudio/problems/ninja-and-the-second-order-elements_6581960?utm_source=striver&amp;utm_medium=website&amp;utm_campaign=a_zcoursetuf">
+                        <img class="lazy lazy-hidden aligncenter wp-image-1830 lazy-loaded" src="/image/codin_ninja.webp" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png">
+                        <noscript>
+                            <img class="aligncenter wp-image-1830 lazy-loaded" src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png">
+                        </noscript>
+                    </a>
+                </td>
+               
+                <td title="Leetcode link"></td>
+                <td title="YouTube Solution">
+                   <button>
+                       <img class="lazy lazy-hidden" src="/image/youtube.png" data-lazy-type="image" data-src="/image/youtube.png" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/youtube.png">
+                       <noscript>
+                           <img src="/image/youtube.png" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/youtube.png">
+                       </noscript>
+                   </button>
+               </td>
+            </tr>
+            <tr>
+           
+                <td title>
+                    <a target="_blank" rel="noopener" href="https://takeuforward.org/data-structure/linear-search-in-c/">Linear Search</a>
+                </td>
+                <td title="CodeStudio link">
+                    <a target="_blank" rel="noopener" href="https://www.codingninjas.com/codestudio/problems/linear-search_6922070?utm_source=striver&amp;utm_medium=website&amp;utm_campaign=a_zcoursetuf">
+                        <img class="lazy lazy-hidden aligncenter wp-image-1830 lazy-loaded" src="/image/codin_ninja.webp" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png">
+                        <noscript>
+                            <img class="aligncenter wp-image-1830 lazy-loaded" src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png">
+                        </noscript>
+                    </a>
+                </td>
+             
+                <td title="Leetcode link"></td>
+                <td title="YouTube Solution">
+                   <button>
+                       <img class="lazy lazy-hidden" src="/image/youtube.png" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2022/08/youtube-icon-42001-300x300.png.webp">
+                       <noscript>
+                           <img src="/image/youtube.png" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/youtube.png">
+                       </noscript>
+                   </button>
+               </td>
+            </tr>
+            <tr>
+                
+                <td title>
+                    <a target="_blank" rel="noopener" href="https://takeuforward.org/data-structure/left-rotate-the-array-by-one/">Left Rotate an
+      array by one place</a>
+                </td>
+                <td title="CodeStudio link">
+                    <a target="_blank" rel="noopener" href="https://www.codingninjas.com/codestudio/problems/left-rotate-an-array-by-one_5026278?utm_source=striver&amp;utm_medium=website&amp;utm_campaign=a_zcoursetuf">
+                        <img class="lazy lazy-hidden aligncenter wp-image-1830 lazy-loaded" src="/image/codin_ninja.webp" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png">
+                        <noscript>
+                            <img class="aligncenter wp-image-1830 lazy-loaded" src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2023/04/Group-11-5.png">
+                        </noscript>
+                    </a>
+                </td>
+               
+                <td title="Leetcode link">
+                    <a target="_blank" rel="noopener" href="https://leetcode.com/problems/rotate-array/">
+                        <img class="lazy lazy-hidden aligncenter wp-image-1830 lazy-loaded" src="/image/leetcode-1-150x150.png.webp" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2022/08/leetcode-1-150x150.png.webp" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2022/08/leetcode-1-150x150.png.webp">
+                        <noscript>
+                            <img class="aligncenter wp-image-1830 lazy-loaded" src="https://takeuforward.org/wp-content/uploads/2022/08/leetcode-1-150x150.png.webp" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="https://takeuforward.org/wp-content/uploads/2022/08/leetcode-1-150x150.png.webp">
+                        </noscript>
+                    </a>
+                </td>
+                <td title="YouTube Solution">
+                   <button>
+                       <img class="lazy lazy-hidden" src="/image/youtube.png" data-lazy-type="image" data-src="/image/youtube.png" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/youtube.png">
+                       <noscript>
+                           <img src="/image/youtube.png" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/youtube.png">
+                       </noscript>
+                   </button>
+               </td>
+               
+            </tr>
+   
+            <tr>
+               
+               <td title>
+                   <a target="_blank" rel="noopener" href="https://takeuforward.org/data-structure/find-the-largest-element-in-an-array/">Largest
+     Element in an Array</a>
+               </td>
+               <td title="CodeStudio link">
+                   <a target="_blank" rel="noopener" href="https://www.codingninjas.com/codestudio/problems/largest-element-in-the-array-largest-element-in-the-array_5026279?utm_source=striver&amp;utm_medium=website&amp;utm_campaign=a_zcoursetuf">
+                       <img class="lazy lazy-hidden aligncenter wp-image-1830 lazy-loaded" src="/image/codin_ninja.webp" data-lazy-type="image" data-src="/image/codin_ninja.webp" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/codin_ninja.webp">
+                       <noscript>
+                           <img class="aligncenter wp-image-1830 lazy-loaded" src="/image/codin_ninja.webp" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/codin_ninja.webp">
+                       </noscript>
+                   </a>
+               </td>
+              
+               <td title="Leetcode link"></td>
+               <td title="YouTube Solution">
+                  <button>
+                      <img class="lazy lazy-hidden" src="/image/youtube.png" data-lazy-type="image" data-src="/image/youtube.png" alt width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/youtube.png">
+                      <noscript>
+                          <img src="/image/youtube.png" alt="" width="24" height="24" decoding="async" loading="lazy" data-lazy-type="image" data-src="/image/youtube.png">
+                      </noscript>
+                  </button>
+              </td>
+           </tr>
+        </tbody>
+      </table>
+  </div>
+  
+  
+  
+  </div>
+  
+</body>
+</html>
+
+
+
+
+
+
+  
+  </body>
+
+
+
+
+
+
+
+
+
+
