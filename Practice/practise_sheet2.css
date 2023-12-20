@@ -1,290 +1,4 @@
-/* ===== Google Font Import - Poppins ===== */
-
-/* add collapsable css */
-
-/* Style the button that is used to open and close the collapsible content */
-body{
-    background-color: #000;
-    color: white;
-}
-.collapsible {
-    background-color: #777;
-    color: white;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    align-items: center;
-    justify-content: space-between;
-    text-align: left;
-    
-  }
-  
-  .active, .collapsible:hover {
-    background-color: #555;
-  }
-  
-  .content {
-    padding: 0 18px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    background-color: #f1f1f1;
-    align-items: center;
-    justify-content: space-between;
-    text-align: left;
-    width: 100%;
-
-    
-  }
-
-
-  .topic_div{
-    margin-top: 70px;
-width: 100%;
-height: 80px;
-background-color: black;
-color: white;
-font-size: 35px;
-padding-left: 100px;
-font-weight: 800;
-  }
-
-.quote_div{
-    margin-top: 2px;
-width: 100%;
-height: 50px;
-background-color: #282525;
-color: white;
-font-size: 15px;
-padding-left: 100px;
-padding-top: 10px;
-font-weight: 800;
-border: 2px solid black;
-
-  }
-.Note_div{
-    padding: 10px 10px;
-    margin: 0 auto;
-max-width:1000px;
-height: 200px;
-
-text-wrap: wrap;
-text-align: start;
-color: white;
-font-size: 15px;
-background-color: #18191A;
-
-
-  }
-
-  .animated-progress {
-    width: 1000px;
-    height: 45px;
-    border-radius: 5px;
-    margin-left: 100px;
-    border: 1px solid rgb(189, 113, 113);
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    
-   
-  }
-  
-  .animated-progress span {
-    height: 100%;
-    display: block;
-    width: 0;
-    color: rgb(255, 251, 251);
-    line-height: 30px;
-    position: absolute;
-    text-align: end;
-    padding-right: 5px;
-    margin: 0 auto;
-
-  }
-  
-  .progress-blue span {
-    background-color: blue;
-  }
-
-  /* Style the button that is used to open and close the collapsible content */
-.collapsible{
-    background-color:#18191A;;
-    color: white;
-    cursor: pointer;
-    padding: 18px;
-margin-top: 10px;
-margin-right: 100px;
-    margin-left: 100px;
-    border: 2px solid black;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    width: 1000px;
-    height: 45px;
-   padding-bottom: 10px;
-   text-decoration: none;
-   align-items: center;
-   justify-items: center;
-   justify-content: center;
-  }
-  .active, .collapsible:hover {
-    background-color: #18191A;
-
-  }
-  .content {
-    padding: 0 18px;
-    max-height: 0;
-text-decoration: none;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    background-color: #18191A;
-    color: white;
-    width: 1000px;
-    height: auto;
-    text-decoration: none;
-   margin: 0 auto;
-    align-items: center;
-    justify-content:center;
-    align-content: center;
-    text-align: left;
-    
-    
-  }
-
-  .collapsible:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
-    font-size: 13px;
-    color: white;
-    float: right;
-    margin-left: 5px;
-    text-decoration: none;
-  }
-  
-  .active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
-  }
-
-
-  @media screen and (max-width:700px) {
-body{
-
-margin: 0 auto;
-
-
-
-}
-.Note_div{
-    margin: 0 auto;
-    font-size: 12px;
-    width: 80%;
-    height: 100px;
-   
-padding-bottom: 20px;
-padding-top: 20px;
-align-content: center;
-justify-content: center;
-align-items: center;
-text-align: center;
-
-
-
-
-}
-
-.collapsible{
-    padding: 18px;
-    margin-top: 10px;
-        margin-left: 50px;
-        margin-right: 50px;
-        border: 2px solid black;
-        text-align: left;
-        outline: none;
-        font-size: 15px;
-        width: 500px;
-        height: 60px;
-       padding-bottom: 10px;
-       text-decoration: none;
-       
-
-}
-.content {
-    padding: 0 18px;
-    max-height: 0;
-text-decoration: none;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    background-color: #18191A;
-    color: white;
-    width: 1000px;
-    height: auto;
-    text-decoration: none;
-    margin-left: 100px;
-    margin-right: 100px;
-    align-items: center;
-    justify-content:center;
-    align-content: center;
-    text-align: left;
-    
-    
-  }
-.quote_div{
-   margin:0 auto;
-width: 100%;
-height: 50px;
-padding-top: 10px;
-font-weight: 800;
-border: 2px solid black;
-max-width: 720px;
-  }
-
-
-
-.animated-progress {
-    max-width: 480px;
-    height: 60px;
-    border-radius: 5px;
-    margin-left: 100px;
-    margin-right: 100px;
-    border: 1px solid rgb(189, 113, 113);
-    overflow: hidden;
-   
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 30px;
-    margin-top: 100px;
-
-  }
-
-.animated-progress span {
-    height: 100%;
-    display: block;
-    width: 0;
-    color: rgb(255, 251, 251);
-    line-height: 30px;
-    position: absolute;
-    text-align: end;
-    padding-right: 5px;
-    margin-right: 100px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-
-
-  }
-
-  }
-
-
-  /*!
+/*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
  * Copyright 2011-2019 Twitter, Inc.
@@ -11699,3 +11413,52 @@ a.text-dark:hover {
     }
 }
 
+.span_arr{
+text-align: center;
+
+}
+
+div.scroll {
+    background-color: #0f0f0f;
+    width: 600px;
+    height: 200px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-align: center;
+    padding: 20px;
+    margin:20px;
+    display: flex;
+    flex-direction: row;
+
+    
+  }
+
+.scroll::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scroll{
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.box{
+    display: inline-flexbox;
+   text-align:center ;
+
+        display: flex;
+        justify-content: space-between;
+   
+    align-content: space-between;
+    margin: 10px;
+  }
+
+.box1{
+    display: inline-flexbox;
+        display: flex;
+        justify-content: space-between;
+    align-content: space-between;
+    margin: 10px;
+
+  }
