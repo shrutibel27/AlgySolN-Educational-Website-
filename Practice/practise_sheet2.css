@@ -11445,7 +11445,8 @@ div.scroll {
 
 .box{
     display: inline-flexbox;
-   
+   text-align:center ;
+
         display: flex;
         justify-content: space-between;
    
