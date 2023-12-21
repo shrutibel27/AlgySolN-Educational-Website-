@@ -1,16 +1,31 @@
 <html>
   <head>
-    <title>Pathfinding Visualizer</title>
+    <title>PathFinder</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link id="cssTheme" rel="stylesheet" href="/styles/PathfindingPage.css"/>
     <link rel="shortcut icon" type="image/png" href="/image/ALgoRangericon.png"/>
+    <script type="text/javascript" src="/PathFinding.js-master/visual/js/controller.js"></script>
+ 
+   
   </head>
+  <style>
+    #stats {
+    position: fixed;
+    bottom: 40px;
+    left: 35px;
+    color: rgb(237, 241, 237);
+    font-size: 85%;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+}
+</style>
   <body>
     <!-- 1] navbar -->
 <!-- Navbar content -->
-<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <img src="/image/ALgoRangericon.png" class="img-thumbnail" alt="icon">
-    <a class="navbar-brand" href="#">Algoranger</a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <!-- <img src="/image/ALgoRangericon.png" class="img-thumbnail" alt="icon"> -->
+    <a class="navbar-brand" href="#">AlgoPoints</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -20,17 +35,17 @@
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
                 <a class="nav-link" href="/home_page.html" action="">Home <span class="sr-only">(current)</span></a>
-            </li> -->
+            </li>
 <!-- Learn button 1.7 -->
-            <!-- <li class="nav-item active">
+            <li class="nav-item active">
               <a class="nav-link" href="/learn/learnpage.html" action="">Learn <span class="sr-only">(current)</span></a>
-            </li> -->
+            </li>
 <!-- Practice button 1.6 -->
-            <!-- <li class="nav-item active">
+            <li class="nav-item active">
               <a class="nav-link" href="#" action="">Practice <span class="sr-only">(current)</span></a>
-            </li> -->
+            </li>
 <!-- visualization button 1.5 -->
-            <!-- <li class="nav-item active">
+            <li class="nav-item active">
               <a class="nav-link" href="/visualization/visualization_page.html" action="">visualization <span class="sr-only">(current)</span></a>
             </li>
         </ul>
@@ -42,13 +57,13 @@
             </li>
         </ul>
         </div>
-    </div> -->
-<!-- </nav>  -->
+    </div>
+</nav> 
     <div id='navbarDiv'>
      <nav class="navbar navbar-inverse">
        <div class="container-fluid">
          <div class="navbar-header">
-           <a id="refreshButton" class="navbar-brand" href="#">Pathfinding Visualizer</a>
+           <a id="refreshButton" class="navbar-brand" href="#">AlgoPoint's PathFinder</a>
          </div>
          <ul class="nav navbar-nav">
            <li class="dropdown">
@@ -77,10 +92,14 @@
                <li id='startStairDemonstration'><a href="#">Simple Stair Pattern</a></li>
              </ul>
            </li>
-           <li id='startButtonAddObject'><a href="#">Add Bomb</a></li>
-           <li id='startButtonStart'><button id="actualStartButton" class="btn btn-default navbar-btn" type="button">Visualize!</button></li>
+           <li id='startButtonAddObject'><a href="#"></a></li>
+           <li id='startButtonStart'>
+            <button id="actualStartButton" class="btn btn-default navbar-btn" type="button">
+              Visualize!
+            </button>
+          </li>
            <li id='startButtonClearBoard'><a href="#">Clear Board</a></li>
-           <li id='startButtonClearWalls'><a href="#">Clear Walls &amp; Weights</a></li>
+           <li id='startButtonClearWalls'><a href="#"></a></li>
            <li id='startButtonClearPath'><a href="#">Clear Path</a></li>
            <li class="dropdown">
              <a id="adjustSpeed" class="dropdown-toggle" data-toggle="dropdown" href="#">Speed: Fast
@@ -112,8 +131,8 @@
             <div class="start"></div>Start Node</li>
           <li>
             <div class="target"></div>Target Node</li>
-          <li id="bombLegend">
-            <div class="object"></div>Bomb Node</li>
+          <!-- <li id="bombLegend">
+            <div class="object"></div></li> -->
           <li id="weightLegend">
             <div class="borderlessWeight"></div>Weight Node</li>
           <li>
@@ -126,8 +145,12 @@
             <div class="wall"></div>Wall Node</li>
         </ul>
       </div>
-      <div id="algorithmDescriptor">Pick an algorithm and visualize it!</div>
+      <div id="algorithmDescriptor"></div>
       <table id='board'/>
+    </div>
+    <div id="stats">
+      <p id="time">Time: <span id="timeValue">5.5000ms</span></p>
+      <p id="steps">operations: <span id="stepsValue">2159</span></p>
     </div>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
